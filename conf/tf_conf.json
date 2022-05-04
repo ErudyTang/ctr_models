@@ -1,0 +1,345 @@
+{
+  "home_dir": "/home/algo/tangjingya/ctr_models",
+  "ckpt_dir": "tensorflow/ckpt/",
+  "model_dir": "tensorflow/model/",
+  "log_dir": "tensorflow/log/",
+  "train_data_dir": "data/train/",
+  "val_data_dir": "data/val/",
+  "models": [
+    {
+      "name": "dnn_custom",
+      "optimizer": "adam",
+      "learning_rate": 0.001,
+      "hidden_units": "128, 64",
+      "batch_size": 256,
+      "epoch": 10
+    },
+    {
+      "name": "dnn",
+      "optimizer": "adam",
+      "learning_rate": 0.001,
+      "hidden_units": "128, 64",
+      "batch_size": 256,
+      "epoch": 10
+    },
+    {
+      "name": "dcn",
+      "optimizer": "adam",
+      "learning_rate": 0.0005,
+      "hidden_units": "128, 64",
+      "n_cross_layers": 2,
+      "batch_size": 256,
+      "epoch": 10
+    },
+    {
+      "name": "lr",
+      "optimizer": "ftrl",
+      "learning_rate": 0.5,
+      "batch_size": 256,
+      "epoch": 10
+    },
+    {
+      "name": "wd",
+      "optimizer": "ftrl",
+      "learning_rate": 0.5,
+      "batch_size": 256,
+      "epoch": 10
+    },
+    {
+      "name": "fm",
+      "optimizer": "ftrl",
+      "learning_rate": 0.05,
+      "batch_size": 256,
+      "epoch": 10
+    },
+    {
+      "name": "dfm",
+      "optimizer": "adam",
+      "learning_rate": 0.0001,
+      "hidden_units": "128, 64",
+      "batch_size": 256,
+      "epoch": 10
+    }
+  ],
+  "features": [
+    {
+      "name": "label",
+      "type": "int",
+      "default": 0,
+      "label": true
+    },
+    {
+      "name": "int_fea_00",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_01",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_02",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_03",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_04",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_05",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_06",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_07",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_08",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_09",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_10",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_11",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "int_fea_12",
+      "type": "int",
+      "default": 0,
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_00",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_01",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_02",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_03",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_04",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_05",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_06",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_07",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_08",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_09",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_10",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_11",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_12",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_13",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_14",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_15",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_16",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_17",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_18",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_19",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_20",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_21",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_22",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_23",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    },
+    {
+      "name": "cat_fea_24",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [1000, 8]
+    },
+    {
+      "name": "cat_fea_25",
+      "type": "string",
+      "default": "",
+      "trans": "hash_embedding",
+      "params": [10000, 8]
+    }
+  ]
+}
