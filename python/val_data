@@ -1,0 +1,4 @@
+0 age@32:1 gender:0 city@北京:1 item_id@0202:1 ctr:0.1
+1 age@30:1 gender:1 city@北京:1 item_id@0201:1 ctr:0.4
+1 age@32:1 gender:1 city@上海:1 item_id@0201:1 ctr:0.6
+1 age@25:1 gender:1 item_id@0202:1 ctr:0.9
